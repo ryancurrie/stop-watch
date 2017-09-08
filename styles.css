@@ -4,10 +4,15 @@
   padding: 3em;
   text-align: center;
 }
- button {
+
+#seconds {
+  font-size: 24em;
+}
+
+button {
   margin: 5px;
   color: #fff;
- }
+}
 
 button#start {
   background-color: green;

@@ -1,19 +1,26 @@
 var tick = 0
-
+var watch
 var seconds = document.querySelector('#seconds')
 var startButton = document.querySelector('#start')
+var stopButton = document.querySelector('#stop')
 
-function start() {
-  setInterval(function () {
+var start = function() {
+  watch = setInterval(function () {
     tick++
   }, 1000)
 }
 
-function update() {
-  setInterval(function () {
+var update = function () {
+  watch = setInterval(function () {
     seconds.textContent = tick
   }, 1000)
 }
 
+var stop = function() {
+  clearInterval(watch)
+}
+
 startButton.addEventListener('click', start)
 startButton.addEventListener('click', update)
+
+stopButton.addEventListener('click', stop)
