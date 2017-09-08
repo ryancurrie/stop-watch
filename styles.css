@@ -4,3 +4,15 @@
   padding: 3em;
   text-align: center;
 }
+ button {
+  margin: 5px;
+  color: #fff;
+ }
+
+button#start {
+  background-color: green;
+}
+
+button#stop {
+  background-color: red;
+}
