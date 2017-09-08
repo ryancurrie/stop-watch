@@ -15,5 +15,5 @@ function update() {
   })
 }
 
-startButton.addEventListener('click', start())
-startButton.addEventListener('click', update())
+startButton.addEventListener('click', start)
+startButton.addEventListener('click', update)
