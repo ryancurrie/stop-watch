@@ -12,7 +12,7 @@ function start() {
 function update() {
   setInterval(function () {
     seconds.textContent = tick
-  })
+  }, 1000)
 }
 
 startButton.addEventListener('click', start)
