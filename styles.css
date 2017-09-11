@@ -21,3 +21,8 @@ button#start {
 button#stop {
   background-color: red;
 }
+
+button#start:disabled,
+button#stop:disabled {
+  background-color: #d3d3d3;
+}

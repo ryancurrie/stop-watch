@@ -8,6 +8,7 @@ var stopButton = document.querySelector('#stop')
 var start = function() {
   watch1 = setInterval(function () {
     tick++
+    document.querySelector('#start').disabled = true;
   }, 1000)
 }
 
@@ -20,6 +21,7 @@ var update = function () {
 var stop = function() {
   clearInterval(watch1)
   clearInterval(watch2)
+  document.querySelector('#start').disabled = false;
 }
 
 startButton.addEventListener('click', start)
