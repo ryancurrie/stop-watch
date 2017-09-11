@@ -23,5 +23,14 @@ button#stop {
 }
 
 button#reset {
-  background-color: yellow;
+  background-color: #ffd700;
+}
+
+button#set {
+  background-color: blue;
+}
+
+button#start:disabled,
+button#stop:disabled {
+  background-color: #d3d3d3;
 }
