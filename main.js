@@ -30,7 +30,9 @@ var update = function () {
 
 var reset = function() {
   tick = 0
+  limit = null
   seconds.textContent = tick
+  document.querySelector('#limit').value = 0;
   document.querySelector('.container').style.background = '#fff'
 }
 
